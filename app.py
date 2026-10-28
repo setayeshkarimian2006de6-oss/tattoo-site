@@ -28,4 +28,4 @@ def spin():
     return jsonify({"prize": prize['name'], "emoji": prize['emoji']})
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(host='0.0.0.0',port=10000)
