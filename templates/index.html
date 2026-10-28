@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>INK MAGIC | گردونه شانس</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <div class="noise"></div><div class="orb orb-one"></div><div class="orb orb-two"></div>
+  <header class="topbar"><a class="brand" href="#top"><span class="brand-mark">✦</span> INK<span>MAGIC</span></a><span class="live"><i></i> شانسِ تتوی تو اینجاست</span></header>
+  <main id="top">
+    <section class="hero">
+      <div class="hero-copy">
+        <div class="eyebrow"><span>✧</span> LITTLE MAGIC, BIG INK <span>✧</span></div>
+        <h1>یه چرخ بزن،<br><em>جادو رو ببر!</em></h1>
+        <p>شانس امروزت رو امتحان کن؛ شاید تخفیف بعدی تتوت همین یه چرخ فاصله داشته باشه.</p>
+        <div class="mini-stats"><div><b>✦</b><span>جایزه‌های خاص</span></div><div><b>♡</b><span>فقط برای مشتری‌ها</span></div><div><b>✧</b><span>یک چرخ، یک شانس</span></div></div>
+      </div>
+      <div class="wheel-stage">
+        <div class="spark spark-a">✦</div><div class="spark spark-b">✧</div><div class="spark spark-c">♡</div>
+        <div class="wheel-label">YOUR LUCK<br><small>IS CALLING</small></div>
+        <div class="pointer"></div>
+        <div class="wheel" id="wheel"><div class="wheel-center">INK<br><small>LUCKY</small></div></div>
+        <div class="wheel-caption">✦ SPIN THE MAGIC ✦</div>
+      </div>
+    </section>
+    <section class="play-card">
+      <div class="card-head"><div><span class="step">01 / YOUR DETAILS</span><h2>اول خودتو معرفی کن <span>♡</span></h2></div><div class="tiny-star">✳</div></div>
+      <form id="spinForm"><label>اسم کوچولوت <input name="name" placeholder="مثلاً ستایش..." maxlength="80" required></label><label>شماره تماس <input name="phone" placeholder="شماره‌ای که باهاش رزرو کردی" maxlength="30" required></label><button id="spinButton" type="submit"><span>✦</span> گردونه رو بچرخون <span>✦</span></button><p class="fineprint">با زدن دکمه، شانس خودت رو امتحان می‌کنی ✨</p></form>
+      <div id="result" class="result" aria-live="polite"><div class="result-icon">?</div><div><span>YOUR PRIZE</span><h3>جایزه‌ات اینجا ظاهر می‌شه</h3><p>آماده‌ای برای یه سورپرایز کوچولو؟</p></div></div>
+    </section>
+    <section class="prize-section"><div class="section-title"><div><span class="step">02 / THE GOODIES</span><h2>توی گردونه چی داریم؟</h2></div><span class="twinkle">✧ ✦ ✧</span></div><div class="prize-grid">
+      <article class="prize-card p-pink"><span class="prize-emoji">💗</span><div><small>THE PINK DEAL</small><h3>تخفیف ویژه</h3><p>برای تتوی بعدی‌ات</p></div><span class="card-arrow">↗</span></article>
+      <article class="prize-card p-purple"><span class="prize-emoji">✨</span><div><small>MAGIC EXTRA</small><h3>هدیه‌ی کوچولو</h3><p>یه سورپرایز از طرف ما</p></div><span class="card-arrow">↗</span></article>
+      <article class="prize-card p-white"><span class="prize-emoji">🪽</span><div><small>AFTERCARE</small><h3>مراقبت تتو</h3><p>برای درخشش بهتر طرحت</p></div><span class="card-arrow">↗</span></article>
+    </div></section>
+    <footer><span class="brand-mark">✦</span> INK MAGIC <span>— made with a little mischief ♡</span></footer>
+  </main>
+  <div class="confetti" id="confetti"></div>
+  <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body></html>
